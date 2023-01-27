@@ -1,0 +1,65 @@
+h1{
+    color: red;
+}
+
+@media  screen and (max-width: 700px) {
+    /*Telas menores que Xpx*/
+    h1{
+        color: blue;
+    }
+}
+
+/*Outros modos
+screen, print, speech, all*/
+
+@media print and (max-width: 600px) {
+    h1{
+        color: rgb(145, 255, 145);
+    }
+}
+
+/*Todos os modos - all*/
+
+@media (max-width: 700px){
+    h2{
+        color: purple;
+    }
+}
+
+/*Mobile First*/
+/* min-width > max-width*/
+
+@media (min-width: 500px){
+    /*Maiores que Xpx*/
+    h2{
+        color: teal;
+    }
+}
+
+/*AND na media query*/
+@media (min-width: 300px) and (max-width: 400px){
+    h3{
+        font-size: 2em;
+    }
+}
+
+/*Orientation*/
+@media (orientation: landscape) {
+    h3{
+        color: brown;
+    }
+}
+
+/*or na media query*/
+@media (max-width: 200px), (orientation: landscape) {
+    h3{
+        font-size: 4em;
+    }
+}
+
+/*A ORDEM IMPORTA JOAOZINHO*/
+
+/*Breackpoints*/
+h5{
+    
+}
